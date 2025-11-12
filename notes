@@ -117,6 +117,4 @@ fruits2 = fruit.copy() //replica of the list
 print(fruits.index("apple")) //prints out the index of the element of the list 
 print(fruits.count("apple")) //counts how many time the element appears on the list
 
--tuples- 
-#container where you can store different values
 
