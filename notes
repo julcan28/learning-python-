@@ -17,9 +17,9 @@ print("  /____|")    //order of the instruction matters
 -variables & data types-
 //variables are like containers 
 *variable types*
-character_name = "Tom"    # string
+character_name = "Tom"    # string (plain text)
 character_age = 50.5      # number (float)
-is_male = False            # boolean
+is_male = True            # boolean
 
 
 *changeable variable example*
@@ -27,7 +27,73 @@ character_name = "John"
 character_age = 45
 print("The name of the man is " + character_name + ",")
 print("he is " + str(character_age) + " years old.") //numbers or float must be converted to string using str()
-
-character_name = "Mike"
+character_name = "Mike" //if you want to change the variable in between the text
 print("He liked the name" + character_name + ",")
 print("but doesn't want to change the name given by his parents.")
+
+-string-
+print("Hello\nWorld") // \n to insert new line to the string
+print("\"Hello World\"") // \" to print out quotation mark 
+print("\") // \ prints out a backlash 
+
+#concatenation 
+phrase = hello 
+print(phrase + "world")
+
+#functions - can be used to modify the string or add to the string 
+phrase = hello
+
+print(phrase.upper()) //to convert the string to uppercase
+
+print(phrase.lower()) //to convert the string to lowercase
+
+print(phrase.isupper()) //checks the string if uppercase
+
+print(phrase.islower()) //checks the string if lowercase
+
+print(len(phrase)) //tells how many characters are there in the string
+
+print(phrase[0]) //tells what is the letter or the character based on the index. 
+//index starts with 0 so for the sample code it will print the first character in the string
+
+print(phrase.index("h")) //tells what index is the value you inputted 
+// for the example it will output 0 as the h is the first character
+// if you put multiple characters it will output the starting number 
+
+print(phrase.replace("he", "ya")) // changes the he to ya
+
+-numbers-
+print(2) //prints number
+
++ - addition
+* - multiplication
+- - subtraction
+/ - division 
+% - modulus (gives out the remainder)
+
+//use paranthesis for the order of operations ex: print(3*(4+5)) will add 4 and 5 first 
+//numbers can be stored in variables 
+
+my_num = 3
+print(str(my_num) + "is my favorite number") //to print number along a string you need to use str()
+
+abs() - gives the absolute value 
+pow(3,2) - gives 3 raised to the power of 2
+max(4,6) - returns the number that is higher
+min(4,6) - returns the smallest number
+round() - rounds off the number 
+
+#math functions 
+from math import * // math module to access more math function 
+
+floor() - always round down the number
+ceil() - always round up the number
+sqrt() - gives out the sqrt of the number 
+
+-getting input from the user- 
+name = input("Enter your name: ") //input() allows the user to have an input 
+age = input("Enter your age: ") 
+print("Hello " + name + "! You are" + age)
+
+
+
